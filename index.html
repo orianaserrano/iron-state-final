@@ -52,7 +52,7 @@
 
                 <div class ="hero-message">
                     <h2>
-                        Iron can withstand <span>44,898 pounds</span> <br>so can you.</h2>
+                        Iron can withstand <span>44,898 pounds</span> <br>so can you.
                     </h2>
                     <a class="explore-btn" href="#philosophy">
                     Explore →
@@ -60,14 +60,14 @@
                 </div>
             </section>
 
+            <section id="philosophy">
             <div class="philosophy-images">
-                <div>
                     <img src ="images/philosophy-image1.jpg" alt="Close up of a person running">
                     <img src="images/philosophy-image2.jpg" alt="Person jumping rope">
                     <img src="images/philosophy-image3.jpg" alt="Close up of a person lifting weights">
-                </div>
+            </div>
 
-            <div class="philosophy content">
+            <div class="philosophy-content">
                 <p class="section-title">Our training philosophy</p>
 
                 <h2>Discipline <br>
@@ -99,6 +99,7 @@
                             <p>
                             GET STRONG AND BUILD MUSCLE
                             </p>
+                        </div>
                     </button>
 
                     <button class="program-item" type="button">
@@ -118,6 +119,7 @@
                             <p>
                             GET STRONGER AND LAST LONGER
                             </p>
+                        </div>
                     </button>
 
                     <button class="program-item" type="button">
@@ -130,7 +132,11 @@
                         </div>
                     </button>
 
-                    <div class="program-display ">
+                </div>
+
+                    
+
+                    <div class="program-display">
                     <img src="images/programs-strength-image.jpg" alt="Person flexing their muscles">
 
                     <div class = "program-information">
@@ -145,7 +151,7 @@
                         </p>
                     </div>
 
-                        <div class=" program-stats">
+                        <div class="program-stats">
 
                         <div class="stats">
                         
@@ -160,7 +166,7 @@
                         <div class="stats">
 
                         <img src="images/dumbell-icon.svg"
-                        alt="Dumbell icon">
+                        alt="Dumbbell icon">
 
                             <h3>4-6 days/week</h3>
                             <p>workout frequency</p>
@@ -174,8 +180,11 @@
                         </div>
 
                     </div>
+                    
                     <div class="save-program"> 
-                    <button type="button"> Save Program </button> 
+                    <button id="save-program-btn" type="button">
+                    Save Program
+                    </button>
                     </div>
 
                     <p class="save-message">
@@ -225,9 +234,6 @@
     </div> 
 
 </section>
-
-        </section>
-
         <section id="contact">
            <div class="contact-message">
             
@@ -258,8 +264,10 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="goal">Training Goal</label>
-                <select id="goal">
-                    <option>Choose a goal</option>
+                <select id="goal" name="goal" required>
+                    <option value="" selected disabled>
+                    Choose a goal
+                    </option>
                     <option>Strength</option>
                     <option>Weight Loss</option>
                     <option>Endurance</option>
@@ -271,8 +279,10 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send Message</button>
-                
+               <button type="submit" id="send-message-btn">
+                Send Message
+                </button>
+
             </form>
 
            </div>
@@ -282,22 +292,25 @@
         </main>
 
         <footer>
-            <div class="logo"
+            <div class="logo">
             <h2>IRON STATE</h2>
             </div>
 
             <div class="footer-mssg">
-                <p>"Made with love in Miami, FL <3"</p>
+                <p>Made with love in Miami, FL</p>
             </div>
 
             <nav class="footer-nav">
 
-            <a href="#home">Home</a>
+            <a href="#hero">Home</a>
             <a href="#philosophy">Philosophy</a>
             <a href="#state-of-iron">The State of Iron</a>
             <a href="#contact">Contact</a>
-            
-            <div class="social-icons">
+
+
+    </nav>
+
+    <div class="social-icons">
             
                 <a href="#">
             <img src="images/instagram-icon.svg" alt="Instagram">
@@ -315,12 +328,9 @@
             </div>
 
 
-    </nav>
-
-
-
-
         </footer>
 
 </body>
+
+</html>
 
