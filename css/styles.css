@@ -1,0 +1,52 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #111;
+    color: #F5F5F5;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --heading-font: "Anton", sans-serif;
+    --body-font: "Intel One Mono", sans-serif;
+    --button-font: "Bebas Neue", sans-serif;
+
+    --black: #0A0A0A;
+    --gray: #5B5B5B;
+    --off-white: #F8F8F8;
+    --cherry-red: #B22222;
+    --red: #D43C3C
+
+}
