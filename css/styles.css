@@ -169,5 +169,76 @@ border-bottom: 1px solid black;
     transform: translateX(4rem);
 }
 
+/* philosophy-section */
+#philosophy{
+    display:grid;
+    grid-template-columns:55% 45%;
+    color: var(--off-white);
+    min-height: 1200px;
+    padding-bottom: 200px;
+}
+.philosophy-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 2rem;
+}
 
+.philosophy-content h2{
+    font-family: var(--heading-font);
+}
 
+.philosophy-content h3{
+    font-family: var(--heading-font);
+    font-size: 5rem;
+}
+
+.philosophy-content p{
+    font-family: var(--body-font);
+    width: 65%;
+    font-size: 1.2rem;
+}
+
+.philosophy-content .explore-btn{
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    font-family: var(--button-font);
+}
+
+.philosophy-content .explore-btn span{
+     margin-left: 1.5rem;
+}
+
+.philosophy-content .explore-btn:hover {
+    border-bottom: 1px solid var(--off-white);
+    padding-bottom: 5px;
+}
+
+.philosophy-images{
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 627px;
+}
+
+.img2{
+    position: absolute;
+    width: 413px;
+    top: 450px;
+    left: 350px;
+    z-index: 2;
+}
+
+.img3{
+    position: absolute;
+    width: 300px;
+    top: 825px;
+    left: 700px;
+    z-index: 3;
+}
