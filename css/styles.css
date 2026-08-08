@@ -42,6 +42,8 @@ ul {
     --heading-font: "Anton", sans-serif;
     --body-font: "Intel One Mono", sans-serif;
     --button-font: "Bebas Neue", sans-serif;
+    --program-description-font: "Inter", sans-serif;
+
 
     --black: #0A0A0A;
     --gray: #5B5B5B;
@@ -241,4 +243,156 @@ border-bottom: 1px solid black;
     top: 825px;
     left: 700px;
     z-index: 3;
+}
+
+/* Programs Section */
+
+#programs{
+    background-color: var(--off-white);
+    display: grid;
+    grid-template-columns: 0.2fr 1fr ;
+}
+
+
+.program-list{
+    display:flex;
+    flex-direction:column;
+    background-color: var(--black);
+    gap: 4rem;
+     padding: 4rem 3rem;
+   
+}
+
+.program-list h2{
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+
+.program-item{
+    position: relative;
+     color: var(--off-white);
+     display: flex;
+     text-align: left;
+     gap: 0.5rem;
+     padding: 3rem 0;
+     font-family: var(--heading-font);
+     align-items: flex-start;
+
+}
+
+.program-item::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25px;       
+    width: 150px;     
+    height: 1px;
+    background: var(--off-white);
+     transition: bottom .3s ease;
+}
+
+.program-item:hover span,
+.program-item:hover h3,
+.program-item:hover p {
+    color: var(--red);
+}
+
+.program-item:hover::after{
+    transform: translateY(-30px);
+}
+
+
+.program-item span{
+     font-size: 6rem;
+     font-family: var(--heading-font);
+     line-height: 1;
+}
+
+
+.program-description{
+    margin-top: 10px;  
+}
+
+.program-description p{
+    font-family: var(--program-description-font);
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.program-display{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: var(--black);
+    column-gap: 4rem;
+}
+
+.program-display > img{
+    grid-column: 1/ 3;
+    width: 100%;
+}
+
+.program-information{
+    padding: 4rem;
+}
+
+.stats img{
+    width: 80px;
+    height: 80px;
+}
+
+.program-stats{
+    max-width: 100%;
+     padding-top: 10rem;
+}
+
+.stats{
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.stat-text{
+    font-family: var(--program-description-font);
+    text-transform: capitalize;
+    font-size: 1rem;
+
+}
+
+.stats h3{
+    font-family: var(--heading-font);
+}
+
+.program-information p{
+    font-family: var(--body-font);
+    max-width: 400px;
+    margin-left: 2rem;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.program-information h2{
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.program-information .label-text{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+#save-program-btn{
+ font-family: var(--body-font);
+    border: 1px solid var(--black);
+    padding: 1rem 2rem;
+
 }
