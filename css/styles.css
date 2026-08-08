@@ -542,3 +542,19 @@ border-bottom: 1px solid black;
     font-family: var(--button-font);
     font-size: 6rem;
 }
+
+#send-message-btn{
+    font-family: var(--body-font);
+    border: 1px solid var(--black);
+    padding: 1rem 2rem;
+   align-self: center;
+    max-width: 50%;
+}
+
+#send-message-btn:hover{
+background: var(--black);
+    color: var(--off-white);
+    transition: .3s;
+}
+
+/* footer */
