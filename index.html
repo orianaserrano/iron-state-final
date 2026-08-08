@@ -255,7 +255,7 @@
             
             <h2>Let's Build <br>
             Your <br>
-            Iron State
+            <span>Iron State</span>
             </h2>
 
             <p>
@@ -271,14 +271,19 @@
            </div>
 
            <div class="contact-form">
-            <h3>Contact Us</h3>
+            <h3>Contact</h3>
             <form>
+                <div class="input">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+                </div>
 
+                <div class="input">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                </div>
 
+                <div class="input">
                 <label for="goal">Training Goal</label>
                 <select id="goal" name="goal" required>
                     <option value="" selected disabled>
@@ -289,12 +294,12 @@
                     <option>Endurance</option>
                     <option>Flexibility</option>
                 </select>
+                </div>
 
-
-
+                <div class="input">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
+                </div>
                <button type="submit" id="send-message-btn">
                 Send Message
                 </button>
