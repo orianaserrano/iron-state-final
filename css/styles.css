@@ -323,9 +323,9 @@ border-bottom: 1px solid black;
 
 .program-display{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr .5fr;
     color: var(--black);
-    column-gap: 4rem;
+    column-gap: 2rem;
 }
 
 .program-display > img{
@@ -334,29 +334,32 @@ border-bottom: 1px solid black;
 }
 
 .program-information{
-    padding: 4rem;
+    padding: 2rem 4rem 4rem;
 }
 
 .stats img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .program-stats{
-    max-width: 100%;
-     padding-top: 10rem;
+    padding-top: 8rem;
+    padding-right: 2rem;
+    border-left: 1px solid var(--black);
+    padding-left: 3rem;
+
 }
 
 .stats{
     display: flex;
     gap: 2rem;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .stat-text{
-    font-family: var(--program-description-font);
-    text-transform: capitalize;
-    font-size: 1rem;
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    font-size: .8rem;
 
 }
 
@@ -364,12 +367,22 @@ border-bottom: 1px solid black;
     font-family: var(--heading-font);
 }
 
+.save-message{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
 .program-information p{
     font-family: var(--body-font);
-    max-width: 400px;
+    max-width: 500px;
     margin-left: 2rem;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: left;
+    line-height: 1.6;
+    margin-top: 2rem;
 
 }
 
@@ -378,9 +391,9 @@ border-bottom: 1px solid black;
     text-transform: uppercase;
     font-size: 8rem;
     margin-top: 5rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
     letter-spacing: 1px;
+    margin-left: 2rem;
+
 }
 
 .program-information .label-text{
@@ -389,12 +402,33 @@ border-bottom: 1px solid black;
     font-weight: bold;
 }
 
+.save-program{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
 
 #save-program-btn{
- font-family: var(--body-font);
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
     border: 1px solid var(--black);
-    padding: 1rem 2rem;
+    background: none;
+    transition: all .2s ease;
+}
 
+#save-program-btn img{
+    width: 28px;
+    height: 28px;
+}
+
+#save-program-btn:hover{
+    background: var(--black);
+    color: var(--off-white);
 }
 
 /*State of Iron Carousel */
@@ -555,6 +589,7 @@ border-bottom: 1px solid black;
 #send-message-btn:hover{
 background: var(--black);
     transition: .3s;
+    color: var(--off-white);
 }
 
 /* footer */
