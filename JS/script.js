@@ -52,10 +52,26 @@ $(function () {
 
     });
 
-
-
-    
-
     /*Carousel*/
+    const swiper = new Swiper(".state-carousel", {
+        loop: true,
+
+        slidesPerView: 2.3,
+        centeredSlides: true,
+        spaceBetween: 20,
+        
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    });
+
+
+
 
 });
