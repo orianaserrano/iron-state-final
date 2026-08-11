@@ -71,6 +71,20 @@ $(function () {
         }
     });
 
+    /*JQUERY UI DIALOG*/
+
+    $("#confirmation-dialog").dialog({
+    autoOpen: false,
+    modal: true
+});
+
+$(".contact-form form").on("submit", function(event){
+
+    event.preventDefault();
+
+    $("#confirmation-dialog").dialog("open");
+});
+
 
 
 
