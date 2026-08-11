@@ -389,7 +389,7 @@ border-bottom: 1px solid black;
 .program-information h2{
     font-family: var(--heading-font);
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 6rem;
     margin-top: 5rem;
     letter-spacing: 1px;
     margin-left: 2rem;

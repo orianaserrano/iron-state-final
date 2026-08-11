@@ -1,0 +1,37 @@
+{
+  "strength": {
+    "title": "Strength",
+    "description": "Our strength program is built to increase your overall strength through power training methods, compound lifts, and progressive overload.",
+    "image": "images/programs-strength-image.jpg",
+    "length": "12 Weeks",
+    "frequency": "4–6 Days/Week",
+    "level": "Intermediate"
+  },
+
+  "weightLoss": {
+    "title": "Weight Loss",
+    "description": "Burn body fat through a combination of strength training, cardio, and sustainable nutrition habits.",
+    "image": "images/programs-weightloss-image.jpg",
+    "length": "10 Weeks",
+    "frequency": "4–5 Days/Week",
+    "level": "Beginner"
+  },
+
+  "endurance": {
+    "title": "Endurance",
+    "description": "Develop cardiovascular fitness and muscular endurance with progressive conditioning workouts.",
+    "image": "images/programs-endurance-image.jpg",
+    "length": "8 Weeks",
+    "frequency": "5 Days/Week",
+    "level": "Intermediate"
+  },
+
+  "flexibility": {
+    "title": "Flexibility",
+    "description": "Improve mobility, flexibility, and recovery through guided stretching and movement routines.",
+    "image": "images/programs-flexibility-image.jpg",
+    "length": "6 Weeks",
+    "frequency": "3–4 Days/Week",
+    "level": "All Levels"
+  }
+}

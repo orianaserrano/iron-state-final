@@ -20,6 +20,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
      <!-- JavaScript -->
     <script src="js/script.js" defer></script>
 
@@ -101,7 +107,7 @@
                 <div class="program-list">
                     <h2>Programs</h2>
 
-                    <button class="program-item" type="button">
+                    <button class="program-item" type="button" data-program-type="strength">
                         <span>01</span>
                         <div class ="program-description">
                             <h3>Strength</h3>
@@ -111,7 +117,7 @@
                         </div>
                     </button>
 
-                    <button class="program-item" type="button">
+                    <button class="program-item" type="button" data-program-type="weightLoss">
                         <span>02</span>
                         <div class ="program-description">
                             <h3>Weight Loss</h3>
@@ -121,7 +127,7 @@
                         </div>
                     </button>
 
-                    <button class="program-item" type="button">
+                    <button class="program-item" type="button" data-program-type="endurance">
                         <span>03</span>
                         <div class ="program-description">
                             <h3>Endurance</h3>
@@ -131,7 +137,7 @@
                         </div>
                     </button>
 
-                    <button class="program-item" type="button">
+                    <button class="program-item" type="button" data-program-type="flexibility">
                         <span>04</span>
                         <div class ="program-description">
                             <h3>Flexibility</h3>
@@ -146,7 +152,7 @@
                     
 
                     <div class="program-display">
-                    <img src="images/programs-strength-image.jpg" alt="Person flexing their muscles">
+                    <img class="program-image" src="images/programs-strength-image.jpg" alt="Person flexing their muscles">
                     
                     <div class = "program-information">
                         <p class="label-text">About this program</p>
