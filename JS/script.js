@@ -4,13 +4,18 @@ $(function () {
     /* Program Switcher */
 
     $.getJSON("data/programs.json", function(programs){
-        console.log(programs);
+        let currProgram = "strength";
+        const initialSavedProgram = localStorage.getItem("favoriteProgram");
+        
+        if (currProgram === initialSavedProgram) {
+        $("#save-program-btn img")
+            .attr("src", "images/button-heart-filled.svg");
+        }
 
         $(".program-item").on("click", function(){
             const selectedProgram = $(this).data("program-type");
-            console.log(selectedProgram);
+            currProgram = selectedProgram
             const program = programs[selectedProgram];
-            console.log(program);
 
             $(".program-information h2").text(program.title);
             $(".program-information p:not(.label-text)").text(program.description);
@@ -22,14 +27,34 @@ $(function () {
              $(".stats:eq(1) h3").text(program.frequency);
              $(".stats:eq(2) h3").text(program.level);
 
+             const savedProgram = localStorage.getItem("favoriteProgram");
+              
+            if (currProgram === savedProgram){
+            $("#save-program-btn img")
+            .attr("src", "images/button-heart-filled.svg");
+            } else{
+            $("#save-program-btn img")
+            .attr("src", "images/button-heart.svg");
+            }
 
             
         });
+
+        /*Save Program*/
+        $("#save-program-btn").on("click", function(){
+            localStorage.setItem("favoriteProgram", currProgram);
+
+            $("#save-program-btn img")
+            .attr("src", "images/button-heart-filled.svg");
+
+            alert("Program Saved Successfully!")
+        });
+
     });
 
 
 
-    /*Save Program*/
+    
 
     /*Carousel*/
 
