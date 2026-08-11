@@ -14,6 +14,8 @@ $(function () {
 
         $(".program-item").on("click", function(){
             const selectedProgram = $(this).data("program-type");
+            $(".program-item").removeClass("active");
+            $(this).addClass("active");
             currProgram = selectedProgram
             const program = programs[selectedProgram];
 

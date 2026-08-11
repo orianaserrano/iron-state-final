@@ -282,16 +282,6 @@ border-bottom: 1px solid black;
 
 }
 
-.program-item::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 25px;       
-    width: 150px;     
-    height: 1px;
-    background: var(--off-white);
-     transition: bottom .3s ease;
-}
 
 .program-item:hover span,
 .program-item:hover h3,
@@ -301,6 +291,12 @@ border-bottom: 1px solid black;
 
 .program-item:hover::after{
     transform: translateY(-30px);
+}
+
+.program-item.active span,
+.program-item.active h3,
+.program-item.active p{
+    color: var(--red);
 }
 
 
